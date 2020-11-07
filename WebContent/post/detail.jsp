@@ -4,17 +4,16 @@
 <head>
 <meta charset="UTF-8">
 <title>게시글 상세 페이지</title>
-<link rel="stylesheet" href="/apple/static/css/style.css" />
+<link rel="stylesheet" href="/post/static/css/style.css" />
 </head>
 <body>
 	<header>
 		<h1>게시글 상세 페이지</h1>
 	</header>
 	<hr />
-		<nav>
-					<a href="/apple/member?cmd=loginForm">로그인</a> 
-					<a href="/apple/member?cmd=joinForm">회원가입</a>
-		</nav>
+		
+			<%@include file="../include/nav.jsp"%>
+			
 		<section>
 			<table border="1">
 					<tr>
@@ -31,8 +30,8 @@
 							<td>ssar</td>
 							<td>첫번째 글입니다.</td>
 							<td>내용입니다.</td>
-							<td><a href="/apple/post?cmd=updateForm&id=1">수정</a></td>
-							<td><a href="/apple/post?cmd=deleteProc&id=1">삭제</a></td>
+							<td><a href="/post/post?cmd=updateForm&id=1">수정</a></td>
+							<td><a href="/post/post?cmd=deleteProc&id=1">삭제</a></td>
 					</tr>
 			</table>
 		</section>

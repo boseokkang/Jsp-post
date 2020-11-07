@@ -4,19 +4,18 @@
 <head>
 <meta charset="UTF-8">
 <title>게시글 작성 페이지</title>
-<link rel="stylesheet" href="/apple/static/css/style.css" />
+<link rel="stylesheet" href="/post/static/css/style.css" />
 </head>
 <body>
 			<header>
 				<h1>게시글 작성 페이지</h1>
 			</header>
 			<hr />
-				<nav>
-						<a href="/apple/member?cmd=loginForm">로그인</a> 
-						<a href="/apple/member?cmd=joinForm">회원가입</a>
-				</nav>
+				
+			<%@include file="../include/nav.jsp"%>
+
 			<section>
-					<form action="/apple/post?cmd=saveProc" method="post">
+					<form action="/post/post?cmd=saveProc" method="post">
 						<table border="1">
 							<tr>
 									<th>제목</th>

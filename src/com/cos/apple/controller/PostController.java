@@ -33,6 +33,7 @@ public class PostController extends HttpServlet {
 		
 			protected void doProcess(HttpServletRequest request, HttpServletResponse response)
 								throws ServletException, IOException {
+								System.out.println("컨트롤러 post");
 							// 1. request UTF-8 세팅 → web.xml 필터 등록
 							// 2. response UTF-8 세팅 → doProcess 등록하기
 							response.setCharacterEncoding("UTF-8");
