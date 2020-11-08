@@ -28,7 +28,7 @@
 							<td>2020-06-18</td>
 					</tr>
 					</table>
-					<a href="/apple/post?cmd=saveForm">글쓰기</a>
+					<a href="/post/post?cmd=saveForm">글쓰기</a>
 			</section>
 		<footer>
 			<p>Created By Apple.</p>
