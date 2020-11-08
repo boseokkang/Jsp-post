@@ -1,6 +1,7 @@
 package com.cos.apple.action.post;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -8,12 +9,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.cos.apple.action.Action;
+import com.cos.apple.dao.PostDao;
+import com.cos.apple.model.Post;
 
 public class PostListAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 					System.out.println("postlist");
+					
+					PostDao postDao = new PostDao();
+					List<Post> posts = postDao.글목록(); // 여러 건의 글을 불러오기 때문에 posts
+					request.setAttribute("posts", posts);
+					
+					
 					RequestDispatcher dis = request.getRequestDispatcher("post/list.jsp");
 					dis.forward(request, response);
 		
