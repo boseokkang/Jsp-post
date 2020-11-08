@@ -15,6 +15,7 @@ public class MemberLoginProcAction implements Action{
 
 			@Override
 			public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+							System.out.println("로그인 클릭");
 							String username = request.getParameter("username");
 							String password = request.getParameter("password");
 			
@@ -28,7 +29,7 @@ public class MemberLoginProcAction implements Action{
 								session.setAttribute("principal", principal);
 								response.sendRedirect("index.jsp");
 							}
-				System.out.println("4444");
+				
 			}
 
 }

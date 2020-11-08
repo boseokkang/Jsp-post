@@ -46,6 +46,7 @@ public class MemberDao {
 					pstmt.setString(3, email);
 					pstmt.setInt(4, id);
 					return pstmt.executeUpdate();
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

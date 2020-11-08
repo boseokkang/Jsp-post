@@ -29,9 +29,10 @@
 					<button>로그인 하기</button>
 			</form>
 		</section>
+		
 		<footer>
 			<p>Created By Apple.</p>
-			<p>부산 진구 중앙대로 708</p>
+			<p>김해 중앙대로 708</p>
 		</footer>
 </body>
 </html> 

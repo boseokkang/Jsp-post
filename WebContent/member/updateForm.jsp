@@ -11,16 +11,16 @@
 		<h1>회원정보 수정 페이지</h1>
 	</header>
 	<hr />
-	
-	<%@include file="../include/nav.jsp"%><nav>
-	
+
+	<%@include file="../include/nav.jsp"%>
+
 	<section>
 		<form action="/post/member?cmd=updateProc" method="post">
 			<input type="hidden" value="${sessionScope.principal.id}" name="id" />
 			<table border="1">
 				<tr>
 					<th>유저네임</th>
-					<td><input value="${sessionScope.principal.username}" type="text" name="username" readonly /></td>
+					<td><input value="${sessionScope.principal.username}" type="text" name="username"  /></td>
 				</tr>
 				<tr>
 					<th>패스워드</th>
@@ -28,7 +28,7 @@
 				</tr>
 				<tr>
 					<th>이메일</th>
-					<td><input value="${sessionScope.principal.email} 넣기" type="email" name="email" /></td>
+					<td><input value="${sessionScope.principal.email}" type="email" name="email" /></td>
 				</tr>
 			</table>
 			<button>회원수정 완료</button>
@@ -39,4 +39,4 @@
 		<p>부산 진구 중앙대로 708</p>
 	</footer>
 </body>
-</html> 
+</html>
